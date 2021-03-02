@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  font-family: inter;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+}
+
+.container {
+  background-color: #F3F3F3;
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.container section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container H2 {
+  text-align: center;
+  color: #606060;
+}
+
+.container h1 {
+  font-size: 192px;
+  line-height: 198px;
+  color: #606060;
+  text-align: center;
+}
+
+.container .sum {
+  color: white;
+  background-color: #215BFF;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 24px;
+  border: none;
+  font-family: Neue Haas Grotesk Display Pro;
+  font-weight: 600;
+}
+
+.container .rest {
+  color: white;
+  background-color: #FF4921;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 24px;
+  border: none;
+  font-family: Neue Haas Grotesk Display Pro;
+  font-weight: 600;
+}
+
+.container .again {
+  color: white;
+  background-color: #6C6C6C;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 24px;
+  border: none;
+  font-family: Neue Haas Grotesk Display Pro;
+  font-weight: 600;
+}
+
+.container button:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=stylestt.css.map */

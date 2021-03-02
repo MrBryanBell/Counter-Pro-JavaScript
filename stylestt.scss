@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+
+*, *:after, *:before {
+	box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: inter;
+}
+
+@mixin button($color, $bgcolor, $padding, $radius, $ftsize) {
+    color: $color;
+    background-color: $bgcolor;
+    padding: $padding;
+    border-radius: $radius;
+    font-size: $ftsize;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.container {
+    background-color: #F3F3F3;
+    max-width: 400px;
+    padding: 1rem;
+
+    section {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    H2 {
+        text-align: center;
+        color: #606060;
+    }
+
+    h1 {
+        font-size: 192px;
+        line-height: 198px;
+        color: #606060;
+        text-align: center;
+    }
+    
+    .sum {
+        @include button(white, #215BFF,16px 24px, 4px, 24px);
+        border: none;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-weight: 600;
+    }
+    .rest {
+        @include button(white, #FF4921,16px 24px, 4px, 24px);
+        border: none;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-weight: 600;
+    }
+
+    .again {
+        @include button(white, #6C6C6C,16px 24px, 4px, 24px);
+        border: none;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-weight: 600;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+
+    
+}
+
