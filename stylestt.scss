@@ -18,6 +18,7 @@
 
 body {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     height: 100vh;
     place-items: center;
     background-color: #080808;
@@ -72,4 +73,43 @@ body {
 
     
 }
+
+.second {
+    background-color:#1e1e1e;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 5px;
+
+
+    .item {
+        background-color: #215BFF;
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 500px) { 
+    body {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 40px;
+    }
+
+    .container{
+        margin-bottom: 50px;
+    }
+
+    .second {
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: repeat(2, 100px);
+        max-width: 300px;
+    }
+
+ }
+
+
 
