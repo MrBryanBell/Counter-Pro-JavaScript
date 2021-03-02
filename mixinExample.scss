@@ -1,0 +1,43 @@
+
+
+
+/* 4 || Mixins */
+    /* Sin Parámetros */
+    
+    @mixin button($color, $backCol) {
+        background-color: $backCol;
+        color: $color;
+    }
+
+    h1 {
+        @include button(black, white);
+    }
+
+/* Ciclos each */
+
+    $colors: (
+        y: yellow,
+        b: blue,
+        r: red
+    );
+    
+    @each $key, $value in $colors {
+        .#{$value} {
+            color: #{$value};
+            background-color: #{$key} ;
+        }
+    
+        .#{$key} {
+            color: #{$key};
+        }
+    }
+    
+    /* Parámetros por defecto, Mixins */
+    
+    @mixin button($coloor: red) {
+        color: $coloor;
+    }
+    
+    h1 {
+        @include button(blue);
+    }

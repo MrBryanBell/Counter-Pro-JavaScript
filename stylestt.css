@@ -12,10 +12,11 @@ body {
   display: grid;
   height: 100vh;
   place-items: center;
+  background-color: #080808;
 }
 
 .container {
-  background-color: #F3F3F3;
+  background-color: #1e1e1e;
   max-width: 400px;
   padding: 1rem;
 }

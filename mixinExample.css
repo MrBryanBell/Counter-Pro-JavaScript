@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 4 || Mixins */
+/* Sin Parámetros */
+h1 {
+  background-color: white;
+  color: black;
+}
+
+/* Ciclos each */
+.yellow {
+  color: yellow;
+  background-color: y;
+}
+
+.y {
+  color: y;
+}
+
+.blue {
+  color: blue;
+  background-color: b;
+}
+
+.b {
+  color: b;
+}
+
+.red {
+  color: red;
+  background-color: r;
+}
+
+.r {
+  color: r;
+}
+
+/* Parámetros por defecto, Mixins */
+h1 {
+  color: blue;
+}
+/*# sourceMappingURL=mixinExample.css.map */

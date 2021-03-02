@@ -1,0 +1,16 @@
+span {
+
+    text:{
+        align: center;
+        decoration: none;
+        transform: uppercase;
+    }
+
+    &:hover {
+        color: black;
+        cursor: grab;
+    }
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $col;
+    color: white;
+}
